@@ -8,10 +8,14 @@ Compile and run Java programs with one command
 5. `curl https://raw.githubusercontent.com/BlazerYoo/Java/main/jintro.sh > jintro.sh`
 6. You may have to run `chmod +x j.sh` and `chmod +x jintro.sh`
 
+...or you can add the directory containing the `j.sh` and `jintro.sh` files to PATH which requires more work depending on operating system.
+
 ## Usage
+(Adding `~/` before the shell script is only necessary if you did not add to PATH)
+
 Use `j.sh` for running regular Java programs
 ```
-~/your/path/here> j.sh Test1.java 0 1 2 3
+~/your/path/here> ~/j.sh Test1.java 0 1 2 3
 Compiling Test1.java...
 Successfully compiled Test1.java.
 Executing Test1...
@@ -30,7 +34,7 @@ Hello World
 1
 2 3 4
 End
-~/your/path/here> jintro.sh Test2.java < stdin.txt '>' stdout.txt
+~/your/path/here> ~/jintro.sh Test2.java < stdin.txt '>' stdout.txt
 Compiling Test1.java...
 Successfully compiled Test1.java.
 Executing Test1...
